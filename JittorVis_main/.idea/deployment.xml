@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="yanjing@166.111.80.25:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="maxin@166.111.153.52:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mist@gpu25.mistgpu.xyz:10060">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mist@gpu260.mistgpu.xyz:10040">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mist@gpu260.mistgpu.xyz:10040 (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mist@gpu260.mistgpu.xyz:10060">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mist@gpu260.mistgpu.xyz:10070">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mx@166.111.154.57:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yanjing@166.111.80.25:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yanjing@166.111.80.25:22 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/yanjing/project/JittorVis/JittorVis/JittorVis_main" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yanjing@166.111.80.25:22 (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/yanjing/project/JittorVis/JittorVis/JittorVis_main" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="yanjing@166.111.80.25:22 (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_297" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
