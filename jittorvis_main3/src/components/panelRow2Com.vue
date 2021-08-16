@@ -205,11 +205,9 @@ export default {
                     .text(self.rightbottom_area_hidden ? "◀" : "▶")//
                     .on("mouseover", function() {
                         d3.select(this).attr("opacity", 1)
-                      // self.rightbottom_area.select("#arrow").attr("opacity", 1)
                     })
                     .on("mouseout", function() {
                         d3.select(this).attr("opacity", .5)
-                      // self.rightbottom_area.select("#arrow").attr("opacity", .5)
                     })
                     .on("click", function(){
                         self.rightbottom_area_hidden = !self.rightbottom_area_hidden
@@ -433,10 +431,12 @@ export default {
             self.all_nodes[x.index].treenodes = [x.index].concat(...x.children.map(e => self.all_nodes[e.index].treenodes))
           }
         }
-        if (x.children.length <= 2)
-          x.subnodes = [].concat(...x.children.map(d => d.children.length == 0 ? [d.index] : d.children.map(e => e.index)))
-        else
-          x.subnodes = [].concat(...x.children.map(d => [d.index]))
+        // if (x.children.length <= 2)
+        //   x.subnodes = [].concat(...x.children.map(d => d.children.length == 0 ? [d.index] : d.children.map(e => e.index)))
+        // else
+        //   x.subnodes = [].concat(...x.children.map(d => [d.index]))
+        x.subnodes = [].concat(...x.children.map(d => [d.index]))
+
       }
       visit(root)
       nodes.push(root)
@@ -991,10 +991,7 @@ export default {
                 .transition()
                 .duration(self.remove_duration)
                 .style('opacity', 0);
-            // op_highlight_rect.exit()
-            //     .transition()
-            //     .duration(self.remove_duration)
-            //     .style('opacity', 0);
+
             paths.exit()
                 .transition()
                 .duration(self.remove_duration)
@@ -1004,7 +1001,6 @@ export default {
                 groups.exit().remove();
                 exploring_cover_rects.exit().remove();
                 paths.exit().remove();
-                // op_highlight_rect.exit().remove();
             }, self.remove_duration);
         },
     _create_network_node: function () {
@@ -1562,7 +1558,7 @@ export default {
                 .attr("xlink:href", function (d) {
 
                     return d.attrs.enable_expand ?
-                        `http://166.111.80.25:5010/api/get_image?dataset=default&data_id=${d.index}&var_node_id=${d.attrs.var_node_id}&shape=${d.attrs.shape}&image_type=${d.expand_info}` :
+                        `http://localhost:5009/api/get_image?dataset=default&data_id=${d.index}&var_node_id=${d.attrs.var_node_id}&shape=${d.attrs.shape}&image_type=${d.expand_info}` :
                         ''
                 })
                 .style('opacity', function (d) {
@@ -1822,7 +1818,7 @@ export default {
                     values: values,
                     title: `node: ${node.title}`
                 };
-                console.log(attrs);
+                // console.log(attrs);
                 self.$tool.default.set_content_of_tooltip(self, attrs);
             }
         },
