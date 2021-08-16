@@ -446,7 +446,8 @@ function compute_edges(nodes, all_edges, all_nodes=[]) {
                 if (d.end == e && all_nodes[e].parent != -1) d.end = all_nodes[e].parent
             }
         })
-        left_nodes = [...new Set(left_nodes.map(d => all_nodes[d].parent).filter(d => d != -1))]
+//         left_nodes = [...new Set(left_nodes.map(d => all_nodes[d].parent).filter(d => d != -1))]
+        left_nodes = [...new Set(left_nodes.map(d => all_nodes[d].parent!=-1? all_nodes[d].parent: d).filter(d => d != -1))]
         return preserve_nodes.concat(left_nodes)
     }
     if (in_nodes.length > 1) {
